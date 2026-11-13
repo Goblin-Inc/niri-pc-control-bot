@@ -1,0 +1,26 @@
+{
+  "bot_token": "YOUR_TELEGRAM_BOT_TOKEN",
+  "allowed_users": [
+    123456789
+  ],
+  "security": {
+    "require_pin_for_shutdown": true,
+    "pin_code": "0000"
+  },
+  "presets": {
+    "work": {
+      "title": "🚀 Работа",
+      "apps": [
+        "vscodium",
+        "firefox",
+        "telegram-desktop"
+      ]
+    },
+    "relax": {
+      "title": "🎮 Отдых",
+      "apps": [
+        "steam"
+      ]
+    }
+  }
+}
