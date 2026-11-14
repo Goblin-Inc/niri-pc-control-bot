@@ -1,27 +1,29 @@
 # Niri PC Control Bot
 
-Telegram-бот на **Python (`aiogram 3`)** для удалённого управления Linux-системой и композитным оконным менеджером **Niri (Wayland)** через IPC.
+> 🌐 **Language:** **English** | [Русский (README_Ru.md)](README_Ru.md)
 
-## ✨ Возможности
-- 📸 **Скриншот экрана** — мгновенный снимок экрана через `grim` и отправка в чат.
-- 🪟 **Управление окнами (Niri IPC)** — просмотр открытых окон и закрытие любого окна по клику на inline-кнопку (`niri msg -j windows`).
-- 🖥️ **Управление рабочими столами** — переключение воркспейсов через IPC Niri.
-- 🚀 **Пресеты и запуск софта** — запуск заранее настроенных наборов программ (например, «Работа», «Отдых») или произвольных команд прямо из Telegram.
-- 🔒 **Безопасность и питание** — блокировка сессии (`loginctl lock-session`), подтверждение выключения ПК и фильтрация по Telegram ID (`allowed_users`).
+A Telegram bot built with **Python (`aiogram 3`)** for remotely managing a Linux desktop and the **Niri (Wayland)** scrollable-tiling compositor via IPC.
 
-## 🚀 Установка и запуск
+## ✨ Features
+- 📸 **Instant Screenshots** — captures the screen via `grim` and sends it directly to your Telegram chat.
+- 🪟 **Window Management (Niri IPC)** — lists all open windows and lets you close any window via inline buttons (`niri msg -j windows`).
+- 🖥️ **Workspace Control** — switch active Niri workspaces remotely via IPC.
+- 🚀 **App Presets & Command Runner** — launch predefined application workspaces (e.g., *"Work"*, *"Relax"*) or execute custom commands straight from Telegram.
+- 🔒 **Security & Power Management** — lock the current session (`loginctl lock-session`), confirm system shutdown, and restrict access by Telegram user ID (`allowed_users`).
 
-1. Клонируйте репозиторий и создайте виртуальное окружение:
+## 🚀 Installation & Usage
+
+1. Clone the repository and create a virtual environment:
    ```bash
    python3 -m venv venv
    source venv/bin/activate
    pip install -r requirements.txt
    ```
-2. Скопируйте `config.example.json` в `config.json` и укажите ваш токен бота и Telegram ID:
+2. Copy `config.example.json` to `config.json` and fill in your bot token and Telegram ID:
    ```bash
    cp config.example.json config.json
    ```
-3. Запустите бота:
+3. Start the bot:
    ```bash
    python3 main.py
    ```
