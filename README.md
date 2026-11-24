@@ -27,3 +27,6 @@ A Telegram bot built with **Python (`aiogram 3`)** for remotely managing a Linux
    ```bash
    python3 main.py
    ```
+
+## 📄 License
+MIT © [Goblin-Inc](https://github.com/Goblin-Inc)
